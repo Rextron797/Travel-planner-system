@@ -1,0 +1,5 @@
+DESTINATIONS={
+ "Kyoto":{"country":"Japan","season":"March–May / Oct–Nov","climate":"Mild spring and autumn","daily":5200,"lat":35.0116,"lng":135.7681,"attractions":[["Fushimi Inari Shrine",0,3],["Kiyomizu-dera",500,2],["Arashiyama Bamboo Grove",0,3],["Nishiki Market",1200,2]],"hotels":[["Maple House Kyoto",4200,4.4],["Gion Paper Inn",6100,4.7],["Kyoto Budget Stay",2600,4.1]]},
+ "Goa":{"country":"India","season":"November–February","climate":"Warm and coastal","daily":3000,"lat":15.2993,"lng":74.1240,"attractions":[["Basilica of Bom Jesus",0,2],["Fontainhas",0,2],["Palolem Beach",500,4],["Reis Magos Fort",100,2]],"hotels":[["Palm Courtyard",3000,4.3],["Casa Verde",4700,4.6],["Coast Backpackers",1600,4.0]]},
+ "Jaipur":{"country":"India","season":"October–March","climate":"Dry and pleasant in winter","daily":2800,"lat":26.9124,"lng":75.7873,"attractions":[["Amber Fort",500,3],["City Palace",700,3],["Hawa Mahal",200,1],["Jantar Mantar",200,2]],"hotels":[["Haveli Pages",2800,4.4],["Pink City House",3900,4.5],["Amber Budget Rooms",1500,4.0]]}
+}
