@@ -1,0 +1,163 @@
+hotel_id,destination,country,name,category,stars,rating,reviews,area,distance_km,lat,lng,base_price,total_rooms,amenities,free_cancellation,check_in_time,check_out_time,currency,data_source
+H001,Kyoto,Japan,Maple House Kyoto,Mid-range,3,4.4,3271,Gion,4.0,34.97707,135.76767,4200,48,Free Wi-Fi|Air conditioning|Breakfast included|Parking|Laundry,1,14:00,11:00,INR,synthetic
+H002,Kyoto,Japan,Gion Paper Inn,Mid-range,3,4.7,3873,Higashiyama,6.0,35.01537,135.74046,6100,50,Free Wi-Fi|Air conditioning|Breakfast included|Airport shuttle|Laundry,1,14:00,11:00,INR,synthetic
+H003,Kyoto,Japan,Kyoto Budget Stay,Budget,2,4.1,4052,Higashiyama,7.7,34.99521,135.80115,2600,17,Free Wi-Fi|Air conditioning|Restaurant,1,14:00,11:00,INR,synthetic
+H004,Kyoto,Japan,Nishijin Hostel,Budget,2,4.0,3307,Kyoto Station,0.7,35.01113,135.77047,2300,25,Free Wi-Fi|Air conditioning|Rooftop terrace,1,14:00,11:00,INR,synthetic
+H005,Kyoto,Japan,Kamo River Inn,Budget,2,3.8,98,Arashiyama,0.4,35.01449,135.77056,2300,22,Free Wi-Fi|Air conditioning|Gym,1,14:00,11:00,INR,synthetic
+H006,Kyoto,Japan,Kamo River Courtyard,Mid-range,3,4.5,2763,Higashiyama,4.0,34.98412,135.74521,4400,78,Free Wi-Fi|Air conditioning|Breakfast included|Bar|Parking,0,14:00,11:00,INR,synthetic
+H007,Kyoto,Japan,Arashiyama Residency,Mid-range,3,4.4,1053,Gion,7.1,35.00526,135.73462,4100,57,Free Wi-Fi|Air conditioning|Breakfast included|Gym|Parking,0,14:00,11:00,INR,synthetic
+H008,Kyoto,Japan,Gion Palace Hotel,Luxury,5,4.6,1098,Gion,5.6,35.00821,135.79462,12400,95,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Rooftop terrace|Parking|Restaurant|Airport shuttle,1,14:00,11:00,INR,synthetic
+H009,Kyoto,Japan,Arashiyama Palace Hotel,Luxury,5,4.6,2500,Arashiyama,4.5,35.00351,135.75555,15400,152,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Gym|Airport shuttle|24h reception|Parking,0,14:00,11:00,INR,synthetic
+H010,Goa,India,Palm Courtyard,Mid-range,3,4.3,979,Anjuna,0.9,15.29346,74.12533,3000,56,Free Wi-Fi|Air conditioning|Breakfast included|Gym|Airport shuttle,0,14:00,11:00,INR,synthetic
+H011,Goa,India,Casa Verde,Luxury,5,4.6,4168,Panaji,3.5,15.2889,74.11721,4700,76,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|24h reception|Laundry|Rooftop terrace|Parking,1,14:00,11:00,INR,synthetic
+H012,Goa,India,Coast Backpackers,Budget,2,4.0,755,Calangute,4.9,15.33238,74.12509,1600,12,Free Wi-Fi|Air conditioning|Bar,1,14:00,11:00,INR,synthetic
+H013,Goa,India,Candolim Hostel,Budget,2,4.0,2841,Panaji,4.4,15.27481,74.12355,900,18,Free Wi-Fi|Air conditioning|Laundry,1,14:00,11:00,INR,synthetic
+H014,Goa,India,Palolem Hostel,Budget,2,4.1,1844,Colva,5.7,15.3504,74.07963,1400,27,Free Wi-Fi|Air conditioning|Restaurant,1,14:00,11:00,INR,synthetic
+H015,Goa,India,Palolem Courtyard,Mid-range,3,4.5,3623,Panaji,7.9,15.2489,74.08229,2900,45,Free Wi-Fi|Air conditioning|Breakfast included|Laundry|Rooftop terrace,1,14:00,11:00,INR,synthetic
+H016,Goa,India,Colva Courtyard,Mid-range,3,4.3,4087,Palolem,6.0,15.24578,74.1625,3000,65,Free Wi-Fi|Air conditioning|Breakfast included|Laundry|Bar,1,14:00,11:00,INR,synthetic
+H017,Goa,India,Colva Grand Resort,Luxury,5,4.7,3279,Colva,5.0,15.28328,74.1393,6200,46,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Airport shuttle|Restaurant|Laundry|Bar,1,14:00,11:00,INR,synthetic
+H018,Goa,India,Anjuna Grand Resort,Luxury,5,4.6,1114,Panaji,5.9,15.28181,74.13018,5400,118,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Bar|Gym|Airport shuttle|Rooftop terrace,0,14:00,11:00,INR,synthetic
+H019,Jaipur,India,Haveli Pages,Mid-range,3,4.4,2395,C-Scheme,0.7,26.90867,75.79271,2800,49,Free Wi-Fi|Air conditioning|Breakfast included|Bar|24h reception,0,14:00,11:00,INR,synthetic
+H020,Jaipur,India,Pink City House,Luxury,5,4.5,1430,MI Road,0.4,26.91451,75.78501,3900,150,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Rooftop terrace|24h reception|Airport shuttle|Parking,1,14:00,11:00,INR,synthetic
+H021,Jaipur,India,Amber Budget Rooms,Budget,2,4.0,3822,C-Scheme,5.4,26.86978,75.74353,1500,21,Free Wi-Fi|Air conditioning|24h reception,1,14:00,11:00,INR,synthetic
+H022,Jaipur,India,Johari Guesthouse,Budget,2,4.0,2221,C-Scheme,5.0,26.92684,75.74334,900,22,Free Wi-Fi|Air conditioning|Airport shuttle,1,14:00,11:00,INR,synthetic
+H023,Jaipur,India,Amer Guesthouse,Budget,2,4.2,394,Pink City,2.5,26.92977,75.79969,1000,12,Free Wi-Fi|Air conditioning|24h reception,1,14:00,11:00,INR,synthetic
+H024,Jaipur,India,Amer Boutique Hotel,Mid-range,3,4.6,2299,Bani Park,7.0,26.89923,75.84107,2400,32,Free Wi-Fi|Air conditioning|Breakfast included|24h reception|Restaurant,0,14:00,11:00,INR,synthetic
+H025,Jaipur,India,Johari Boutique Hotel,Mid-range,3,4.3,639,Pink City,7.5,26.96187,75.72062,1700,48,Free Wi-Fi|Air conditioning|Breakfast included|Laundry|Parking,0,14:00,11:00,INR,synthetic
+H026,Jaipur,India,Hawa Mahal Spa Resort,Luxury,5,4.8,2767,Pink City,2.9,26.92204,75.80783,7300,135,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Restaurant|Rooftop terrace|Airport shuttle|24h reception,1,14:00,11:00,INR,synthetic
+H027,Jaipur,India,Sanganer Retreat,Luxury,5,4.6,2842,MI Road,0.6,26.91298,75.79156,6500,76,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Bar|Gym|24h reception|Laundry,0,14:00,11:00,INR,synthetic
+H028,Kerala,India,Coconut Grove Hostel,Budget,2,4.2,1216,Alleppey,3.6,10.85774,76.24945,1300,14,Free Wi-Fi|Air conditioning|Parking,1,14:00,11:00,INR,synthetic
+H029,Kerala,India,Periyar Stay,Budget,2,3.9,3197,Thekkady,6.5,10.8139,76.24251,900,25,Free Wi-Fi|Air conditioning|Rooftop terrace,1,14:00,11:00,INR,synthetic
+H030,Kerala,India,Periyar Guesthouse,Budget,2,4.0,3770,Thekkady,2.9,10.86138,76.27852,900,24,Free Wi-Fi|Air conditioning|Restaurant,1,14:00,11:00,INR,synthetic
+H031,Kerala,India,Coconut Grove Suites,Mid-range,3,4.2,985,Kovalam,4.0,10.85384,76.27174,3100,60,Free Wi-Fi|Air conditioning|Breakfast included|Gym|Laundry,1,14:00,11:00,INR,synthetic
+H032,Kerala,India,Spice Garden Courtyard,Mid-range,3,4.1,2934,Alleppey,6.1,10.86972,76.22858,2100,64,Free Wi-Fi|Air conditioning|Breakfast included|24h reception|Gym,1,14:00,11:00,INR,synthetic
+H033,Kerala,India,Malabar Courtyard,Mid-range,3,4.5,2164,Thekkady,4.3,10.81226,76.23687,2100,77,Free Wi-Fi|Air conditioning|Breakfast included|Rooftop terrace|Parking,1,14:00,11:00,INR,synthetic
+H034,Kerala,India,Periyar Courtyard,Mid-range,3,4.5,3569,Munnar,6.8,10.79938,76.25243,2500,36,Free Wi-Fi|Air conditioning|Breakfast included|Airport shuttle|Gym,1,14:00,11:00,INR,synthetic
+H035,Kerala,India,Backwater Retreat,Luxury,5,4.7,1016,Alleppey,5.2,10.88968,76.26092,7600,118,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Gym|Restaurant|Laundry|Parking,0,14:00,11:00,INR,synthetic
+H036,Kerala,India,Backwater Grand Resort,Luxury,5,4.6,434,Kovalam,3.6,10.86331,76.28503,10100,131,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Rooftop terrace|Restaurant|24h reception|Gym,1,14:00,11:00,INR,synthetic
+H037,Bali,Indonesia,Uluwatu Guesthouse,Budget,2,4.3,1236,Sanur,3.1,-8.40291,115.17662,1800,12,Free Wi-Fi|Air conditioning|Gym,1,14:00,11:00,INR,synthetic
+H038,Bali,Indonesia,Ubud Guesthouse,Budget,2,4.2,4102,Sanur,7.1,-8.36303,115.16675,2000,26,Free Wi-Fi|Air conditioning|Bar,0,14:00,11:00,INR,synthetic
+H039,Bali,Indonesia,Uluwatu Stay,Budget,2,4.0,1083,Sanur,7.8,-8.45361,115.12383,2200,29,Free Wi-Fi|Air conditioning|Restaurant,1,14:00,11:00,INR,synthetic
+H040,Bali,Indonesia,Frangipani Suites,Mid-range,3,4.5,305,Ubud,6.7,-8.36884,115.18774,3000,36,Free Wi-Fi|Air conditioning|Breakfast included|Rooftop terrace|Laundry,1,14:00,11:00,INR,synthetic
+H041,Bali,Indonesia,Ubud Boutique Hotel,Mid-range,3,4.4,1796,Seminyak,1.0,-8.40899,115.18895,3800,59,Free Wi-Fi|Air conditioning|Breakfast included|Bar|Parking,1,14:00,11:00,INR,synthetic
+H042,Bali,Indonesia,Frangipani Courtyard,Mid-range,3,4.5,3038,Seminyak,6.2,-8.43826,115.17818,3500,87,Free Wi-Fi|Air conditioning|Breakfast included|Restaurant|Airport shuttle,1,14:00,11:00,INR,synthetic
+H043,Bali,Indonesia,Rice Terrace Courtyard,Mid-range,3,4.3,1174,Seminyak,2.4,-8.41683,115.18512,4100,82,Free Wi-Fi|Air conditioning|Breakfast included|Bar|Airport shuttle,1,14:00,11:00,INR,synthetic
+H044,Bali,Indonesia,Uluwatu Palace Hotel,Luxury,5,4.9,2870,Seminyak,7.1,-8.37432,115.20926,10100,102,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Rooftop terrace|Parking|Bar|Gym,0,14:00,11:00,INR,synthetic
+H045,Bali,Indonesia,Ubud Grand Resort,Luxury,5,4.6,137,Ubud,2.2,-8.39997,115.18995,11100,139,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|24h reception|Bar|Restaurant|Parking,0,14:00,11:00,INR,synthetic
+H046,Paris,France,Louvre Hostel,Budget,2,4.1,107,Champs-Élysées,3.6,48.8849,2.36591,4500,24,Free Wi-Fi|Air conditioning|Restaurant,1,14:00,11:00,INR,synthetic
+H047,Paris,France,Louvre Guesthouse,Budget,2,3.8,709,Latin Quarter,3.9,48.85169,2.35421,4600,28,Free Wi-Fi|Air conditioning|Rooftop terrace,1,14:00,11:00,INR,synthetic
+H048,Paris,France,Saint-Germain Hostel,Budget,2,4.0,446,Montmartre,1.8,48.87159,2.3549,3300,12,Free Wi-Fi|Air conditioning|Laundry,1,14:00,11:00,INR,synthetic
+H049,Paris,France,Saint-Germain Boutique Hotel,Mid-range,3,4.6,3389,Champs-Élysées,2.3,48.839,2.33764,6600,75,Free Wi-Fi|Air conditioning|Breakfast included|Parking|Rooftop terrace,1,14:00,11:00,INR,synthetic
+H050,Paris,France,Montmartre Suites,Mid-range,3,4.4,2575,Latin Quarter,1.9,48.87319,2.33541,6400,40,Free Wi-Fi|Air conditioning|Breakfast included|Bar|Laundry,1,14:00,11:00,INR,synthetic
+H051,Paris,France,Seine Courtyard,Mid-range,3,4.6,3210,Bastille,7.1,48.89523,2.3419,6400,43,Free Wi-Fi|Air conditioning|Breakfast included|Restaurant|Rooftop terrace,0,14:00,11:00,INR,synthetic
+H052,Paris,France,Louvre Suites,Mid-range,3,4.3,1657,Champs-Élysées,2.2,48.86293,2.35199,7500,53,Free Wi-Fi|Air conditioning|Breakfast included|Bar|Airport shuttle,0,14:00,11:00,INR,synthetic
+H053,Paris,France,Seine Grand Resort,Luxury,5,4.6,3216,Bastille,3.6,48.86615,2.37678,18700,106,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|24h reception|Bar|Parking|Laundry,1,14:00,11:00,INR,synthetic
+H054,Paris,France,Montmartre Spa Resort,Luxury,5,4.9,3545,Le Marais,5.2,48.84442,2.39007,23200,117,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Parking|Restaurant|Rooftop terrace|Bar,1,14:00,11:00,INR,synthetic
+H055,Maldives,Maldives,Reef Inn,Budget,2,4.1,2867,Ari Atoll,2.3,3.20146,73.21749,4700,14,Free Wi-Fi|Air conditioning|Restaurant,0,14:00,11:00,INR,synthetic
+H056,Maldives,Maldives,Sunset Guesthouse,Budget,2,4.2,2178,Ari Atoll,5.9,3.20337,73.17264,5900,25,Free Wi-Fi|Air conditioning|Restaurant,1,14:00,11:00,INR,synthetic
+H057,Maldives,Maldives,Reef Hostel,Budget,2,4.0,1562,Ari Atoll,6.7,3.20813,73.17281,3900,24,Free Wi-Fi|Air conditioning|Parking,1,14:00,11:00,INR,synthetic
+H058,Maldives,Maldives,Reef Residency,Mid-range,3,4.3,2830,Malé,4.8,3.19656,73.21146,12500,73,Free Wi-Fi|Air conditioning|Breakfast included|24h reception|Gym,1,14:00,11:00,INR,synthetic
+H059,Maldives,Maldives,Coral Courtyard,Mid-range,3,4.3,4085,Malé,2.0,3.21445,73.20369,12800,48,Free Wi-Fi|Air conditioning|Breakfast included|24h reception|Parking,1,14:00,11:00,INR,synthetic
+H060,Maldives,Maldives,Atoll Residency,Mid-range,3,4.5,1895,Ari Atoll,5.1,3.16382,73.1808,11900,43,Free Wi-Fi|Air conditioning|Breakfast included|Parking|24h reception,0,14:00,11:00,INR,synthetic
+H061,Maldives,Maldives,Atoll Boutique Hotel,Mid-range,3,4.2,1000,Maafushi,2.8,3.18315,73.21063,12000,49,Free Wi-Fi|Air conditioning|Breakfast included|Laundry|Restaurant,1,14:00,11:00,INR,synthetic
+H062,Maldives,Maldives,Atoll Grand Resort,Luxury,5,4.6,320,Malé,2.1,3.21601,73.20315,36600,91,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Restaurant|Airport shuttle|24h reception|Rooftop terrace,1,14:00,11:00,INR,synthetic
+H063,Maldives,Maldives,Sunset Grand Resort,Luxury,5,4.5,2489,Baa Atoll,0.8,3.20526,73.22619,38100,141,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|24h reception|Parking|Restaurant|Bar,0,14:00,11:00,INR,synthetic
+H064,Uttarakhand,India,Deodar Inn,Budget,2,4.1,1560,Nainital,2.9,30.0453,79.01457,800,19,Free Wi-Fi|Air conditioning|Laundry,0,14:00,11:00,INR,synthetic
+H065,Uttarakhand,India,Himalaya Hostel,Budget,2,3.9,3118,Haridwar,4.9,30.02317,78.99603,1200,30,Free Wi-Fi|Air conditioning|Bar,1,14:00,11:00,INR,synthetic
+H066,Uttarakhand,India,Ganga Guesthouse,Budget,2,4.2,3930,Haridwar,5.2,30.09802,79.03917,1000,30,Free Wi-Fi|Air conditioning|24h reception,1,14:00,11:00,INR,synthetic
+H067,Uttarakhand,India,Deodar Courtyard,Mid-range,3,4.1,2180,Auli,7.5,30.13223,79.06493,2500,85,Free Wi-Fi|Air conditioning|Breakfast included|Airport shuttle|Parking,1,14:00,11:00,INR,synthetic
+H068,Uttarakhand,India,Deodar Residency,Mid-range,3,4.2,433,Auli,4.9,30.0519,79.05176,1800,49,Free Wi-Fi|Air conditioning|Breakfast included|Bar|Parking,1,14:00,11:00,INR,synthetic
+H069,Uttarakhand,India,Ganga Residency,Mid-range,3,4.4,1486,Nainital,3.3,30.06114,79.01553,2200,54,Free Wi-Fi|Air conditioning|Breakfast included|Rooftop terrace|Gym,1,14:00,11:00,INR,synthetic
+H070,Uttarakhand,India,Himalaya Boutique Hotel,Mid-range,3,4.5,3595,Nainital,6.3,30.11092,79.02915,1900,79,Free Wi-Fi|Air conditioning|Breakfast included|Parking|Gym,0,14:00,11:00,INR,synthetic
+H071,Uttarakhand,India,Kedar Palace Hotel,Luxury,5,4.8,2139,Haridwar,7.2,30.0626,79.01584,7500,149,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Airport shuttle|Rooftop terrace|Bar|Gym,0,14:00,11:00,INR,synthetic
+H072,Uttarakhand,India,Valley View Spa Resort,Luxury,5,4.6,2057,Rishikesh,7.4,30.00279,79.05556,4800,73,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Restaurant|Rooftop terrace|24h reception|Airport shuttle,0,14:00,11:00,INR,synthetic
+H073,Himachal Pradesh,India,Beas Inn,Budget,2,4.3,2147,Kasol,5.9,31.0567,77.21253,800,19,Free Wi-Fi|Air conditioning|24h reception,1,14:00,11:00,INR,synthetic
+H074,Himachal Pradesh,India,Deodar Hostel,Budget,2,4.0,3457,Shimla,5.2,31.11339,77.16806,1400,19,Free Wi-Fi|Air conditioning|Laundry,1,14:00,11:00,INR,synthetic
+H075,Himachal Pradesh,India,Snowline Guesthouse,Budget,2,4.2,665,Dharamshala,3.4,31.10703,77.19677,1000,14,Free Wi-Fi|Air conditioning|Gym,0,14:00,11:00,INR,synthetic
+H076,Himachal Pradesh,India,Deodar Courtyard,Mid-range,3,4.3,3423,Shimla,4.0,31.1042,77.15793,2800,48,Free Wi-Fi|Air conditioning|Breakfast included|24h reception|Airport shuttle,0,14:00,11:00,INR,synthetic
+H077,Himachal Pradesh,India,Apple Orchard Suites,Mid-range,3,4.5,577,Dharamshala,5.2,31.06294,77.14326,2300,55,Free Wi-Fi|Air conditioning|Breakfast included|Laundry|Bar,0,14:00,11:00,INR,synthetic
+H078,Himachal Pradesh,India,Beas Suites,Mid-range,3,4.1,2107,Kasol,2.7,31.0886,77.16126,2200,46,Free Wi-Fi|Air conditioning|Breakfast included|24h reception|Bar,1,14:00,11:00,INR,synthetic
+H079,Himachal Pradesh,India,Apple Orchard Courtyard,Mid-range,3,4.3,2188,Manali,5.8,31.10404,77.16324,1700,58,Free Wi-Fi|Air conditioning|Breakfast included|Restaurant|Bar,0,14:00,11:00,INR,synthetic
+H080,Himachal Pradesh,India,Beas Grand Resort,Luxury,5,4.5,645,Dharamshala,6.3,31.13378,77.16337,5100,142,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|24h reception|Bar|Airport shuttle|Parking,0,14:00,11:00,INR,synthetic
+H081,Himachal Pradesh,India,Snowline Grand Resort,Luxury,5,4.9,3853,Kullu,0.4,31.10598,77.17529,6900,63,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Airport shuttle|Gym|24h reception|Bar,0,14:00,11:00,INR,synthetic
+H082,Santorini,Greece,Blue Dome Guesthouse,Budget,2,3.8,2114,Perissa,4.2,36.35566,25.44083,3100,21,Free Wi-Fi|Air conditioning|Parking,1,14:00,11:00,INR,synthetic
+H083,Santorini,Greece,Blue Dome Hostel,Budget,2,3.9,3420,Oia,4.0,36.35872,25.48351,4800,28,Free Wi-Fi|Air conditioning|Gym,0,14:00,11:00,INR,synthetic
+H084,Santorini,Greece,Sunset Guesthouse,Budget,2,3.8,3790,Perissa,7.9,36.33021,25.49006,4900,19,Free Wi-Fi|Air conditioning|24h reception,1,14:00,11:00,INR,synthetic
+H085,Santorini,Greece,Whitewash Courtyard,Mid-range,3,4.5,3363,Imerovigli,6.3,36.36152,25.43476,10100,41,Free Wi-Fi|Air conditioning|Breakfast included|Laundry|24h reception,0,14:00,11:00,INR,synthetic
+H086,Santorini,Greece,Aegean Courtyard,Mid-range,3,4.2,3215,Oia,6.3,36.34613,25.47892,10200,81,Free Wi-Fi|Air conditioning|Breakfast included|Gym|Restaurant,1,14:00,11:00,INR,synthetic
+H087,Santorini,Greece,Sunset Boutique Hotel,Mid-range,3,4.4,991,Oia,4.0,36.40633,25.458,10900,75,Free Wi-Fi|Air conditioning|Breakfast included|Rooftop terrace|Gym,0,14:00,11:00,INR,synthetic
+H088,Santorini,Greece,Whitewash Boutique Hotel,Mid-range,3,4.3,1422,Kamari,6.9,36.39316,25.42153,9100,71,Free Wi-Fi|Air conditioning|Breakfast included|Gym|24h reception,0,14:00,11:00,INR,synthetic
+H089,Santorini,Greece,Blue Dome Spa Resort,Luxury,5,4.6,1312,Kamari,4.1,36.39944,25.47651,35000,68,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Restaurant|Gym|Rooftop terrace|Laundry,1,14:00,11:00,INR,synthetic
+H090,Santorini,Greece,Blue Dome Retreat,Luxury,5,4.5,3816,Kamari,7.4,36.44254,25.44431,28300,81,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Laundry|Rooftop terrace|24h reception|Gym,1,14:00,11:00,INR,synthetic
+H091,Dubai,United Arab Emirates,Marina Guesthouse,Budget,2,3.9,4182,Deira,0.6,25.2092,55.27026,4000,19,Free Wi-Fi|Air conditioning|Restaurant,0,14:00,11:00,INR,synthetic
+H092,Dubai,United Arab Emirates,Marina Inn,Budget,2,4.3,4059,Jumeirah,4.9,25.21937,55.30701,3100,26,Free Wi-Fi|Air conditioning|Restaurant,0,14:00,11:00,INR,synthetic
+H093,Dubai,United Arab Emirates,Burj View Guesthouse,Budget,2,4.0,4009,Business Bay,1.1,25.21309,55.27868,3400,18,Free Wi-Fi|Air conditioning|Airport shuttle,0,14:00,11:00,INR,synthetic
+H094,Dubai,United Arab Emirates,Burj View Suites,Mid-range,3,4.3,402,Marina,4.3,25.18008,55.26228,6400,38,Free Wi-Fi|Air conditioning|Breakfast included|Laundry|Parking,1,14:00,11:00,INR,synthetic
+H095,Dubai,United Arab Emirates,Burj View Residency,Mid-range,3,4.3,1729,Business Bay,6.9,25.24424,55.24263,6400,41,Free Wi-Fi|Air conditioning|Breakfast included|Airport shuttle|Laundry,1,14:00,11:00,INR,synthetic
+H096,Dubai,United Arab Emirates,Desert Palm Suites,Mid-range,3,4.5,1996,Downtown,4.1,25.21865,55.23813,6300,62,Free Wi-Fi|Air conditioning|Breakfast included|Rooftop terrace|Laundry,1,14:00,11:00,INR,synthetic
+H097,Dubai,United Arab Emirates,Jumeirah Suites,Mid-range,3,4.3,438,Marina,2.0,25.20208,55.28465,6500,88,Free Wi-Fi|Air conditioning|Breakfast included|Airport shuttle|Laundry,1,14:00,11:00,INR,synthetic
+H098,Dubai,United Arab Emirates,Creek Grand Resort,Luxury,5,4.8,611,Downtown,6.9,25.19667,55.2358,25600,92,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Restaurant|Bar|24h reception|Airport shuttle,1,14:00,11:00,INR,synthetic
+H099,Dubai,United Arab Emirates,Desert Palm Grand Resort,Luxury,5,4.7,1008,Jumeirah,6.6,25.16188,55.30958,16000,52,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Gym|Airport shuttle|24h reception|Laundry,1,14:00,11:00,INR,synthetic
+H100,Rome,Italy,Pantheon Inn,Budget,2,4.3,2266,Trastevere,5.4,41.94377,12.48806,3900,30,Free Wi-Fi|Air conditioning|Laundry,1,14:00,11:00,INR,synthetic
+H101,Rome,Italy,Colosseo Guesthouse,Budget,2,4.3,2105,Monti,3.2,41.89603,12.524,2600,12,Free Wi-Fi|Air conditioning|Restaurant,1,14:00,11:00,INR,synthetic
+H102,Rome,Italy,Tiber Guesthouse,Budget,2,3.8,3243,Termini,2.5,41.91265,12.5172,3800,19,Free Wi-Fi|Air conditioning|Bar,1,14:00,11:00,INR,synthetic
+H103,Rome,Italy,Colosseo Courtyard,Mid-range,3,4.2,2224,Prati,4.4,41.87789,12.4572,8800,88,Free Wi-Fi|Air conditioning|Breakfast included|Restaurant|Airport shuttle,1,14:00,11:00,INR,synthetic
+H104,Rome,Italy,Colosseo Residency,Mid-range,3,4.4,1715,Termini,7.5,41.87173,12.49017,8300,69,Free Wi-Fi|Air conditioning|Breakfast included|Gym|Parking,0,14:00,11:00,INR,synthetic
+H105,Rome,Italy,Tiber Boutique Hotel,Mid-range,3,4.3,2814,Termini,3.9,41.88432,12.51945,6000,88,Free Wi-Fi|Air conditioning|Breakfast included|Airport shuttle|Laundry,1,14:00,11:00,INR,synthetic
+H106,Rome,Italy,Spanish Steps Residency,Mid-range,3,4.6,1052,Trastevere,5.2,41.91973,12.49335,8400,30,Free Wi-Fi|Air conditioning|Breakfast included|Bar|Parking,1,14:00,11:00,INR,synthetic
+H107,Rome,Italy,Pantheon Grand Resort,Luxury,5,4.9,3816,Termini,1.4,41.89561,12.48748,16000,43,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Rooftop terrace|24h reception|Bar|Gym,1,14:00,11:00,INR,synthetic
+H108,Rome,Italy,Spanish Steps Retreat,Luxury,5,4.8,746,Trastevere,0.8,41.90372,12.50331,27500,45,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Parking|24h reception|Rooftop terrace|Laundry,1,14:00,11:00,INR,synthetic
+H109,London,United Kingdom,Kensington Stay,Budget,2,4.3,156,South Bank,3.5,51.47809,-0.14565,4800,23,Free Wi-Fi|Air conditioning|24h reception,1,14:00,11:00,INR,synthetic
+H110,London,United Kingdom,Kensington Guesthouse,Budget,2,4.0,849,Paddington,5.2,51.54094,-0.09833,4700,12,Free Wi-Fi|Air conditioning|Parking,1,14:00,11:00,INR,synthetic
+H111,London,United Kingdom,Thames Hostel,Budget,2,4.3,2180,Covent Garden,2.4,51.49148,-0.14082,4300,13,Free Wi-Fi|Air conditioning|Laundry,1,14:00,11:00,INR,synthetic
+H112,London,United Kingdom,Soho Courtyard,Mid-range,3,4.6,1182,Kensington,5.5,51.5082,-0.16528,7900,76,Free Wi-Fi|Air conditioning|Breakfast included|24h reception|Airport shuttle,0,14:00,11:00,INR,synthetic
+H113,London,United Kingdom,Soho Residency,Mid-range,3,4.5,2591,Kensington,7.7,51.54458,-0.08617,8700,68,Free Wi-Fi|Air conditioning|Breakfast included|Restaurant|24h reception,0,14:00,11:00,INR,synthetic
+H114,London,United Kingdom,Covent Garden Courtyard,Mid-range,3,4.3,3856,Paddington,6.9,51.51715,-0.08264,6500,52,Free Wi-Fi|Air conditioning|Breakfast included|Rooftop terrace|Parking,1,14:00,11:00,INR,synthetic
+H115,London,United Kingdom,Soho Boutique Hotel,Mid-range,3,4.2,2981,Soho,4.0,51.49546,-0.14695,10000,33,Free Wi-Fi|Air conditioning|Breakfast included|24h reception|Restaurant,1,14:00,11:00,INR,synthetic
+H116,London,United Kingdom,Thames Retreat,Luxury,5,4.5,4026,Kensington,3.9,51.49802,-0.12026,24100,50,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Parking|Airport shuttle|24h reception|Restaurant,0,14:00,11:00,INR,synthetic
+H117,London,United Kingdom,Covent Garden Spa Resort,Luxury,5,4.8,2862,Soho,1.2,51.50814,-0.12855,27900,80,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Bar|Parking|Rooftop terrace|Gym,1,14:00,11:00,INR,synthetic
+H118,New York,United States,Central Park Hostel,Budget,2,4.0,2733,Upper West Side,5.2,40.67866,-74.02969,5700,12,Free Wi-Fi|Air conditioning|Parking,1,14:00,11:00,INR,synthetic
+H119,New York,United States,Midtown Stay,Budget,2,4.2,3580,Midtown,5.4,40.75812,-74.01813,5400,21,Free Wi-Fi|Air conditioning|Laundry,0,14:00,11:00,INR,synthetic
+H120,New York,United States,SoHo Stay,Budget,2,4.2,3695,Upper West Side,5.6,40.74706,-74.0291,5800,13,Free Wi-Fi|Air conditioning|Restaurant,1,14:00,11:00,INR,synthetic
+H121,New York,United States,SoHo Suites,Mid-range,3,4.6,1844,Midtown,5.4,40.68401,-74.04381,9300,76,Free Wi-Fi|Air conditioning|Breakfast included|Gym|Laundry,1,14:00,11:00,INR,synthetic
+H122,New York,United States,Central Park Boutique Hotel,Mid-range,3,4.2,1990,Upper West Side,5.9,40.70151,-74.02422,10300,68,Free Wi-Fi|Air conditioning|Breakfast included|Restaurant|Parking,1,14:00,11:00,INR,synthetic
+H123,New York,United States,Central Park Residency,Mid-range,3,4.4,2152,Midtown,3.2,40.68802,-74.02926,12000,70,Free Wi-Fi|Air conditioning|Breakfast included|Laundry|Parking,0,14:00,11:00,INR,synthetic
+H124,New York,United States,Brooklyn Bridge Courtyard,Mid-range,3,4.5,3693,Chelsea,0.6,40.71364,-74.00707,8100,70,Free Wi-Fi|Air conditioning|Breakfast included|Bar|Airport shuttle,0,14:00,11:00,INR,synthetic
+H125,New York,United States,Brooklyn Bridge Spa Resort,Luxury,5,4.7,1865,Lower Manhattan,2.6,40.70886,-74.02713,28100,95,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Airport shuttle|Parking|Restaurant|Gym,1,14:00,11:00,INR,synthetic
+H126,New York,United States,Central Park Palace Hotel,Luxury,5,4.9,2605,Chelsea,4.6,40.7144,-73.96852,27900,146,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Restaurant|Rooftop terrace|24h reception|Airport shuttle,1,14:00,11:00,INR,synthetic
+H127,Tokyo,Japan,Ueno Guesthouse,Budget,2,4.1,2814,Asakusa,6.7,35.69064,139.6385,2100,22,Free Wi-Fi|Air conditioning|Rooftop terrace,0,14:00,11:00,INR,synthetic
+H128,Tokyo,Japan,Ginza Guesthouse,Budget,2,4.2,709,Shinjuku,1.1,35.67083,139.65005,3000,29,Free Wi-Fi|Air conditioning|Parking,1,14:00,11:00,INR,synthetic
+H129,Tokyo,Japan,Asakusa Stay,Budget,2,3.8,282,Ginza,5.5,35.66704,139.61599,2600,18,Free Wi-Fi|Air conditioning|Laundry,1,14:00,11:00,INR,synthetic
+H130,Tokyo,Japan,Sumida Courtyard,Mid-range,3,4.2,1909,Ueno,7.3,35.68028,139.62163,5700,72,Free Wi-Fi|Air conditioning|Breakfast included|Restaurant|Gym,0,14:00,11:00,INR,synthetic
+H131,Tokyo,Japan,Ueno Boutique Hotel,Mid-range,3,4.5,4036,Ueno,4.8,35.65917,139.63057,5600,42,Free Wi-Fi|Air conditioning|Breakfast included|24h reception|Rooftop terrace,0,14:00,11:00,INR,synthetic
+H132,Tokyo,Japan,Sumida Suites,Mid-range,3,4.6,613,Ginza,5.0,35.64057,139.67806,6100,43,Free Wi-Fi|Air conditioning|Breakfast included|24h reception|Rooftop terrace,0,14:00,11:00,INR,synthetic
+H133,Tokyo,Japan,Sumida Residency,Mid-range,3,4.5,514,Ginza,5.2,35.64776,139.6422,4900,60,Free Wi-Fi|Air conditioning|Breakfast included|Laundry|Restaurant,1,14:00,11:00,INR,synthetic
+H134,Tokyo,Japan,Ueno Grand Resort,Luxury,5,4.6,841,Asakusa,3.4,35.69435,139.64526,14700,126,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|24h reception|Parking|Bar|Gym,1,14:00,11:00,INR,synthetic
+H135,Tokyo,Japan,Asakusa Grand Resort,Luxury,5,4.7,3984,Shinjuku,3.6,35.67533,139.67462,15900,147,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Restaurant|Laundry|Gym|Rooftop terrace,1,14:00,11:00,INR,synthetic
+H136,Thailand,Thailand,Andaman Hostel,Budget,2,3.9,423,Sukhumvit,7.9,13.68787,100.45243,1800,15,Free Wi-Fi|Air conditioning|24h reception,1,14:00,11:00,INR,synthetic
+H137,Thailand,Thailand,Siam Stay,Budget,2,3.8,291,Phuket Old Town,7.6,13.7786,100.5279,1400,27,Free Wi-Fi|Air conditioning|Laundry,1,14:00,11:00,INR,synthetic
+H138,Thailand,Thailand,Lotus Inn,Budget,2,4.0,877,Phuket Old Town,6.2,13.73882,100.46091,1400,25,Free Wi-Fi|Air conditioning|Airport shuttle,0,14:00,11:00,INR,synthetic
+H139,Thailand,Thailand,Orchid Courtyard,Mid-range,3,4.4,2980,Bangkok Riverside,3.7,13.77648,100.47523,3600,80,Free Wi-Fi|Air conditioning|Breakfast included|Bar|Gym,1,14:00,11:00,INR,synthetic
+H140,Thailand,Thailand,Lotus Courtyard,Mid-range,3,4.6,2381,Patong,6.8,13.70745,100.4973,2400,48,Free Wi-Fi|Air conditioning|Breakfast included|Restaurant|Rooftop terrace,0,14:00,11:00,INR,synthetic
+H141,Thailand,Thailand,Lotus Boutique Hotel,Mid-range,3,4.4,650,Bangkok Riverside,2.1,13.74805,100.52045,3200,89,Free Wi-Fi|Air conditioning|Breakfast included|24h reception|Restaurant,0,14:00,11:00,INR,synthetic
+H142,Thailand,Thailand,Orchid Suites,Mid-range,3,4.5,2820,Patong,1.2,13.75687,100.51131,3400,75,Free Wi-Fi|Air conditioning|Breakfast included|Rooftop terrace|Parking,1,14:00,11:00,INR,synthetic
+H143,Thailand,Thailand,Chao Phraya Grand Resort,Luxury,5,4.6,3078,Patong,1.7,13.74402,100.48992,10200,100,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Gym|24h reception|Parking|Restaurant,0,14:00,11:00,INR,synthetic
+H144,Thailand,Thailand,Siam Grand Resort,Luxury,5,4.6,756,Chiang Mai,6.2,13.70563,100.5232,11500,84,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Bar|Airport shuttle|Laundry|24h reception,0,14:00,11:00,INR,synthetic
+H145,Agra,India,Yamuna Stay,Budget,2,4.0,2204,Sadar Bazaar,2.7,27.17341,77.99579,1100,23,Free Wi-Fi|Air conditioning|Rooftop terrace,0,14:00,11:00,INR,synthetic
+H146,Agra,India,Taj View Hostel,Budget,2,4.0,3514,Sadar Bazaar,7.7,27.14362,77.98626,900,12,Free Wi-Fi|Air conditioning|Restaurant,1,14:00,11:00,INR,synthetic
+H147,Agra,India,Mughal Guesthouse,Budget,2,3.8,3189,Sadar Bazaar,4.6,27.19628,77.97418,900,19,Free Wi-Fi|Air conditioning|Rooftop terrace,1,14:00,11:00,INR,synthetic
+H148,Agra,India,Mughal Courtyard,Mid-range,3,4.3,3868,Cantonment,6.8,27.19943,78.06333,2800,61,Free Wi-Fi|Air conditioning|Breakfast included|Laundry|Bar,1,14:00,11:00,INR,synthetic
+H149,Agra,India,Yamuna Suites,Mid-range,3,4.3,670,Sikandra,7.3,27.18616,77.96515,1900,53,Free Wi-Fi|Air conditioning|Breakfast included|Bar|Parking,1,14:00,11:00,INR,synthetic
+H150,Agra,India,Sikandra Courtyard,Mid-range,3,4.6,3035,Taj Ganj,1.8,27.17716,78.00133,2700,39,Free Wi-Fi|Air conditioning|Breakfast included|Laundry|Restaurant,1,14:00,11:00,INR,synthetic
+H151,Agra,India,Fatehabad Residency,Mid-range,3,4.4,402,Taj Ganj,2.2,27.16615,78.01714,2600,35,Free Wi-Fi|Air conditioning|Breakfast included|Rooftop terrace|Airport shuttle,1,14:00,11:00,INR,synthetic
+H152,Agra,India,Fatehabad Retreat,Luxury,5,4.6,1673,Sikandra,7.8,27.12021,77.98466,7600,64,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Airport shuttle|24h reception|Restaurant|Bar,0,14:00,11:00,INR,synthetic
+H153,Agra,India,Taj View Palace Hotel,Luxury,5,4.6,2884,Fatehabad Road,2.3,27.19518,77.99223,7000,97,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Airport shuttle|24h reception|Laundry|Rooftop terrace,0,14:00,11:00,INR,synthetic
+H154,Switzerland,Switzerland,Glacier Guesthouse,Budget,2,4.0,3869,Zermatt,4.3,46.81129,8.19989,4800,18,Free Wi-Fi|Air conditioning|Airport shuttle,1,14:00,11:00,INR,synthetic
+H155,Switzerland,Switzerland,Lakeside Guesthouse,Budget,2,3.9,3820,Zurich,1.9,46.80826,8.2145,5500,24,Free Wi-Fi|Air conditioning|Rooftop terrace,1,14:00,11:00,INR,synthetic
+H156,Switzerland,Switzerland,Edelweiss Stay,Budget,2,4.0,1295,Zermatt,2.2,46.80851,8.21624,7000,12,Free Wi-Fi|Air conditioning|Bar,0,14:00,11:00,INR,synthetic
+H157,Switzerland,Switzerland,Edelweiss Courtyard,Mid-range,3,4.1,3912,Zermatt,5.4,46.77895,8.21848,9900,84,Free Wi-Fi|Air conditioning|Breakfast included|24h reception|Bar,0,14:00,11:00,INR,synthetic
+H158,Switzerland,Switzerland,Matterhorn Courtyard,Mid-range,3,4.1,1169,Interlaken,4.0,46.79233,8.21387,9200,31,Free Wi-Fi|Air conditioning|Breakfast included|Restaurant|Parking,1,14:00,11:00,INR,synthetic
+H159,Switzerland,Switzerland,Edelweiss Residency,Mid-range,3,4.1,427,Lucerne,5.6,46.77229,8.23884,11800,65,Free Wi-Fi|Air conditioning|Breakfast included|Bar|Airport shuttle,0,14:00,11:00,INR,synthetic
+H160,Switzerland,Switzerland,Alpine Boutique Hotel,Mid-range,3,4.2,4164,Zurich,0.9,46.82421,8.2291,9700,44,Free Wi-Fi|Air conditioning|Breakfast included|Gym|Bar,1,14:00,11:00,INR,synthetic
+H161,Switzerland,Switzerland,Edelweiss Grand Resort,Luxury,5,4.8,1801,Zurich,6.1,46.78525,8.23039,42800,48,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Rooftop terrace|Parking|Restaurant|Gym,1,14:00,11:00,INR,synthetic
+H162,Switzerland,Switzerland,Matterhorn Retreat,Luxury,5,4.7,3837,Zermatt,1.7,46.80903,8.21851,31500,96,Free Wi-Fi|Air conditioning|Breakfast included|Swimming pool|Spa|Rooftop terrace|Laundry|Restaurant|Gym,1,14:00,11:00,INR,synthetic
