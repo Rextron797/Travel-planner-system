@@ -3,7 +3,7 @@
 Same function names and return shapes as the original, so routes, templates and the PDF are unchanged.
 Behaviour:
   * USE_FREE_APIS is ON by default      -> keyless providers are used where no key is set
-                                           (weather: Open-Meteo, then MET Norway; currency: Frankfurter).
+                                           (weather: MET Norway, then Open-Meteo; currency: Frankfurter).
   * USE_FREE_APIS=false                 -> built-in demo data (original behaviour, works offline).
   * A real key in .env / Render env     -> that provider is used first.
 Any network/JSON failure falls back to the next provider, then to demo data (and is logged). Results are cached.
@@ -62,7 +62,8 @@ def _get(url, ttl=1800):
     except Exception as e:
         # log host/path only, so API keys in the query string never reach the logs
         log.warning("API request failed: %s -> %s", url.split("?")[0], e)
-        _cache[url] = (time.time() + 120, None)      # don't hammer a failing provider
+        backoff = 900 if getattr(e, "code", None) == 429 else 120   # rate-limited: leave the provider alone for 15 min
+        _cache[url] = (time.time() + backoff, None)
         return None
     _cache[url] = (time.time() + ttl, data)
     return data
@@ -165,13 +166,7 @@ def weather(name):
             log.warning("OpenWeatherMap returned no usable data for %s", name)
     if _free():
         la, lo = round(lat, 2), round(lng, 2)          # same city -> same URL -> cache hit, fewer requests
-        j = _get(f"https://api.open-meteo.com/v1/forecast?latitude={la}&longitude={lo}&current=temperature_2m,weather_code", 3600)
-        try:
-            c = j["current"]
-            return {"temperature": round(c["temperature_2m"]), "condition": _WMO.get(int(c["weather_code"]), "Fair"), "source": "open-meteo"}
-        except Exception:
-            log.warning("Open-Meteo returned no usable data for %s", name)
-        # second keyless provider, used when Open-Meteo is rate-limited (429) or down
+        # MET Norway first: Open-Meteo rate-limits (429) Render's shared IPs
         j = _get(f"https://api.met.no/weatherapi/locationforecast/2.0/compact?lat={la}&lon={lo}", 3600)
         try:
             t = j["properties"]["timeseries"][0]["data"]
@@ -180,6 +175,12 @@ def weather(name):
                     "condition": _met_condition(sym), "source": "met.no"}
         except Exception:
             log.warning("MET Norway returned no usable data for %s", name)
+        j = _get(f"https://api.open-meteo.com/v1/forecast?latitude={la}&longitude={lo}&current=temperature_2m,weather_code", 3600)
+        try:
+            c = j["current"]
+            return {"temperature": round(c["temperature_2m"]), "condition": _WMO.get(int(c["weather_code"]), "Fair"), "source": "open-meteo"}
+        except Exception:
+            log.warning("Open-Meteo returned no usable data for %s", name)
     out = dict(_DEMO_WEATHER)
     out["reason"] = "live weather unavailable (disabled or request failed)"
     return out
@@ -212,7 +213,7 @@ def exchange(amount, currency):
 def status():
     """Which provider each feature uses right now (no secrets)."""
     return {
-        "weather": "openweathermap" if _key("WEATHER_API_KEY") else "open-meteo / met.no" if _free() else "demo",
+        "weather": "openweathermap" if _key("WEATHER_API_KEY") else "met.no / open-meteo" if _free() else "demo",
         "maps": "google-maps" if _key("MAPS_API_KEY") else "open-meteo" if _free() else "demo",
         "places": "opentripmap (attractions)" if _key("PLACES_API_KEY") else "demo",
         "hotels": "synthetic dataset (data/hotels.csv + data/hotel_availability.csv)"
