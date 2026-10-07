@@ -2,10 +2,11 @@
 
 Same function names and return shapes as the original, so routes, templates and the PDF are unchanged.
 Behaviour:
-  * USE_FREE_APIS is ON by default      -> keyless providers (Open-Meteo, Frankfurter) are used where no key is set.
+  * USE_FREE_APIS is ON by default      -> keyless providers are used where no key is set
+                                           (weather: Open-Meteo, then MET Norway; currency: Frankfurter).
   * USE_FREE_APIS=false                 -> built-in demo data (original behaviour, works offline).
-  * A real key in .env / Render env     -> that provider is used.
-Any network/JSON failure falls back to demo data (and is logged), and results are cached.
+  * A real key in .env / Render env     -> that provider is used first.
+Any network/JSON failure falls back to the next provider, then to demo data (and is logged). Results are cached.
 """
 import json
 import logging
@@ -21,6 +22,7 @@ log = logging.getLogger("wanderleaf.api")
 
 _cache = {}
 _q = urllib.parse.quote
+_UA = "Wanderleaf/1.0 github.com/Rextron797/Travel-planner-system"   # MET Norway requires an identifying User-Agent
 _STATIC_RATES = {"INR": 1, "USD": 0.012, "EUR": 0.011, "GBP": 0.0092, "JPY": 1.8}
 _DEMO_WEATHER = {"temperature": 24, "condition": "Pleasant", "source": "demo"}
 _DEFAULT = {"country": "Demo destination", "season": "Year-round", "climate": "Check live weather", "daily": 3500,
@@ -32,6 +34,10 @@ _WMO = {0: "Clear", 1: "Mostly clear", 2: "Partly cloudy", 3: "Overcast", 45: "F
         66: "Freezing rain", 67: "Freezing rain", 71: "Light snow", 73: "Snow", 75: "Heavy snow", 77: "Snow grains",
         80: "Rain showers", 81: "Rain showers", 82: "Heavy showers", 85: "Snow showers", 86: "Snow showers",
         95: "Thunderstorm", 96: "Thunderstorm", 99: "Thunderstorm"}
+_MET = {"clearsky": "Clear", "fair": "Mostly clear", "partlycloudy": "Partly cloudy", "cloudy": "Overcast", "fog": "Fog",
+        "lightrain": "Light rain", "rain": "Rain", "heavyrain": "Heavy rain", "lightrainshowers": "Rain showers",
+        "rainshowers": "Rain showers", "heavyrainshowers": "Heavy showers", "lightsnow": "Light snow", "snow": "Snow",
+        "heavysnow": "Heavy snow", "sleet": "Sleet"}
 
 
 def _key(name):
@@ -50,7 +56,7 @@ def _get(url, ttl=1800):
     if hit and hit[0] > time.time():
         return hit[1]
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "Wanderleaf/1.0"})
+        req = urllib.request.Request(url, headers={"User-Agent": _UA})
         with urllib.request.urlopen(req, timeout=8) as r:
             data = json.loads(r.read().decode("utf-8"))
     except Exception as e:
@@ -140,6 +146,13 @@ def map_info(name):
     return {"lat": d["lat"], "lng": d["lng"], "source": "demo"}
 
 
+def _met_condition(symbol):
+    base = str(symbol).split("_")[0]
+    if "thunder" in base:
+        return "Thunderstorm"
+    return _MET.get(base) or base.capitalize() or "Fair"
+
+
 def weather(name):
     m = map_info(name)
     lat, lng = m["lat"], m["lng"]
@@ -151,12 +164,22 @@ def weather(name):
         except Exception:
             log.warning("OpenWeatherMap returned no usable data for %s", name)
     if _free():
-        j = _get(f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lng}&current=temperature_2m,weather_code", 900)
+        la, lo = round(lat, 2), round(lng, 2)          # same city -> same URL -> cache hit, fewer requests
+        j = _get(f"https://api.open-meteo.com/v1/forecast?latitude={la}&longitude={lo}&current=temperature_2m,weather_code", 3600)
         try:
             c = j["current"]
             return {"temperature": round(c["temperature_2m"]), "condition": _WMO.get(int(c["weather_code"]), "Fair"), "source": "open-meteo"}
         except Exception:
             log.warning("Open-Meteo returned no usable data for %s", name)
+        # second keyless provider, used when Open-Meteo is rate-limited (429) or down
+        j = _get(f"https://api.met.no/weatherapi/locationforecast/2.0/compact?lat={la}&lon={lo}", 3600)
+        try:
+            t = j["properties"]["timeseries"][0]["data"]
+            sym = t.get("next_1_hours", {}).get("summary", {}).get("symbol_code", "")
+            return {"temperature": round(t["instant"]["details"]["air_temperature"]),
+                    "condition": _met_condition(sym), "source": "met.no"}
+        except Exception:
+            log.warning("MET Norway returned no usable data for %s", name)
     out = dict(_DEMO_WEATHER)
     out["reason"] = "live weather unavailable (disabled or request failed)"
     return out
@@ -189,7 +212,7 @@ def exchange(amount, currency):
 def status():
     """Which provider each feature uses right now (no secrets)."""
     return {
-        "weather": "openweathermap" if _key("WEATHER_API_KEY") else "open-meteo" if _free() else "demo",
+        "weather": "openweathermap" if _key("WEATHER_API_KEY") else "open-meteo / met.no" if _free() else "demo",
         "maps": "google-maps" if _key("MAPS_API_KEY") else "open-meteo" if _free() else "demo",
         "places": "opentripmap (attractions)" if _key("PLACES_API_KEY") else "demo",
         "hotels": "synthetic dataset (data/hotels.csv + data/hotel_availability.csv)"
