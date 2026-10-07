@@ -2,12 +2,13 @@
 
 Same function names and return shapes as the original, so routes, templates and the PDF are unchanged.
 Behaviour:
-  * No real key and USE_FREE_APIS off  -> built-in demo data (original behaviour, works offline).
-  * A real key in .env                  -> that provider is used.
-  * USE_FREE_APIS=true                  -> keyless providers (Open-Meteo, Frankfurter) are used where no key is set.
-Any network/JSON failure silently falls back to demo data, and results are cached.
+  * USE_FREE_APIS is ON by default      -> keyless providers (Open-Meteo, Frankfurter) are used where no key is set.
+  * USE_FREE_APIS=false                 -> built-in demo data (original behaviour, works offline).
+  * A real key in .env / Render env     -> that provider is used.
+Any network/JSON failure falls back to demo data (and is logged), and results are cached.
 """
 import json
+import logging
 import os
 import time
 import urllib.parse
@@ -15,6 +16,8 @@ import urllib.request
 
 from .demo_data import DESTINATIONS
 from .places_data import PLACES, canonical
+
+log = logging.getLogger("wanderleaf.api")
 
 _cache = {}
 _q = urllib.parse.quote
@@ -37,19 +40,22 @@ def _key(name):
 
 
 def _free():
-    return os.getenv("USE_FREE_APIS", "").strip().lower() in ("1", "true", "yes", "on")
+    # ON by default; set USE_FREE_APIS=false to force demo data
+    return os.getenv("USE_FREE_APIS", "true").strip().lower() in ("1", "true", "yes", "on")
 
 
 def _get(url, ttl=1800):
-    """GET JSON with a 4 s timeout and an in-memory cache. Returns None on any failure."""
+    """GET JSON with an 8 s timeout and an in-memory cache. Returns None on any failure."""
     hit = _cache.get(url)
     if hit and hit[0] > time.time():
         return hit[1]
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "Wanderleaf/1.0"})
-        with urllib.request.urlopen(req, timeout=2.5) as r:
+        with urllib.request.urlopen(req, timeout=8) as r:
             data = json.loads(r.read().decode("utf-8"))
-    except Exception:
+    except Exception as e:
+        # log host/path only, so API keys in the query string never reach the logs
+        log.warning("API request failed: %s -> %s", url.split("?")[0], e)
         _cache[url] = (time.time() + 120, None)      # don't hammer a failing provider
         return None
     _cache[url] = (time.time() + ttl, data)
@@ -143,15 +149,17 @@ def weather(name):
         try:
             return {"temperature": round(j["main"]["temp"]), "condition": str(j["weather"][0]["main"]), "source": "openweathermap"}
         except Exception:
-            pass
+            log.warning("OpenWeatherMap returned no usable data for %s", name)
     if _free():
         j = _get(f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lng}&current=temperature_2m,weather_code", 900)
         try:
             c = j["current"]
             return {"temperature": round(c["temperature_2m"]), "condition": _WMO.get(int(c["weather_code"]), "Fair"), "source": "open-meteo"}
         except Exception:
-            pass
-    return dict(_DEMO_WEATHER)
+            log.warning("Open-Meteo returned no usable data for %s", name)
+    out = dict(_DEMO_WEATHER)
+    out["reason"] = "live weather unavailable (disabled or request failed)"
+    return out
 
 
 def exchange_rate(currency):
